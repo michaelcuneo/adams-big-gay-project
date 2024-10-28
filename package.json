@@ -1,0 +1,22 @@
+{
+  "name": "adams-big-gay-project",
+  "main": "index.ts",
+  "version": "1.0.0",
+  "dependencies": {
+    "@pulumi/aws": "^6.56.1",
+    "@pulumi/awsx": "^2.16.1",
+    "@pulumi/docker": "^4.5.7",
+    "@pulumi/pulumi": "^3.137.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "init": "pulumi stack init dev",
+    "deploy": "pulumi up --stack dev",
+    "destroy": "pulumi destroy --stack dev",
+    "refresh": "pulumi refresh --stack dev"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.1",
+    "typescript": "^5.6.3"
+  }
+}
